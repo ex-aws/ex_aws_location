@@ -26,7 +26,7 @@ defmodule ExAwsLocation.MixProject do
       {:jason, "~> 1.2"},
 
       # Non-runtime deps
-      {:hackney, "~> 4.0", only: [:dev, :test]},
+      {:hackney, "~> 4.0", only: :dev},
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
@@ -47,7 +47,7 @@ defmodule ExAwsLocation.MixProject do
     [
       description: "Amazon Location Service support library for ExAws",
       licenses: ["MIT"],
-      files: ["lib", "mix.exs", "README*", "CHANGELOG*"],
+      files: ["lib", "mix.exs", "README*", "CHANGELOG*", "LICENSE*"],
       links: %{github: "https://github.com/ex-aws/ex_aws_location"}
     ]
   end
