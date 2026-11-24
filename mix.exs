@@ -34,11 +34,11 @@ defmodule ExAwsLocation.MixProject do
   end
 
   # The Location control plane, metadata and geo-maps services need a version of
-  # ex_aws newer than 2.7.0. Until that is released, set EX_AWS_PATH to a checkout
+  # ex_aws newer than 2.8.1. Until that is released, set EX_AWS_PATH to a checkout
   # of ex_aws that has them. Once it is, bump the requirement and remove this.
   defp ex_aws_dep do
     case System.get_env("EX_AWS_PATH") do
-      nil -> {:ex_aws, "~> 2.7"}
+      nil -> {:ex_aws, "~> 2.8"}
       path -> {:ex_aws, path: path}
     end
   end
